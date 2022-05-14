@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bolt</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="body">
+    <div class="headline" id="headline">
+        <p>
+            Fantasztikus bolt
+        </p>
+        <button class="kosarBtn" onclick="showKosar()"><i class="fa fa-shopping-cart"></i></button>
+    </div>
+    <div class="kosar" id="kosar">
+        <h1>Kosár</h1>
+        <p id="display2"></p>
+        <p class="price">Összesen: 0Ft</p>
+        <p class="price">Egyenleg: 10000Ft</p>
+        <button class="buy" onclick="pay()">Vásárlás</button>
+    </div>
+    <div id="display"></div>
+</body>
+</html>

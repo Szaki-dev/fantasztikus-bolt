@@ -1,0 +1,193 @@
+button.buy {
+    bottom: 10px;
+    position: fixed;
+    height: 50px;
+    width: 300px;
+    background-color: goldenrod;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+}
+/* button.item {
+    font-size: 50px;
+} */
+p {
+    font-size: 20px;
+    width: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+div.kosar {
+    display: block;
+    background-color: gold;
+    position: fixed;
+    padding: 10px;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 0;
+    box-shadow: 0 0 10px black;
+}
+.delBtn {
+    font-size: 20px;
+    position:relative;
+    background-color: red;
+    cursor: pointer;
+}
+button.kosar {
+    width: 300px;
+}
+body {
+    font-family: "IBM Plex Sans", Roboto, system-ui, sans-serif;
+    margin: 0;
+}
+div.kosar p:not(.price) {
+    margin: 0;
+    padding: 10px;
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    height: 50%;
+    text-align-last: justify;
+    margin-bottom: 30px;
+}
+div#display {
+    padding: 20px;
+    padding-top: 95px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 10px;
+    transition: linear 0.3s;
+}
+div.headline {
+    display: block;
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    background-color: gold;
+    box-shadow: 0 0 10px black;
+    z-index: 2;
+}
+p.price {
+    text-align: center;
+    font-size: 30px;
+    text-align-last: justify;
+    margin: 0;
+}
+div.headline p {
+    position: relative;
+    top: 37.5px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    transform: translateY(-50px);
+}
+h1 {
+    padding-top: 75px;
+    text-shadow: 0 0 10px black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+button.kosarBtn{
+    width: auto;
+    top: 12px;
+    right: 12px;
+    font-size: 40px;
+    background-color: gold;
+    display: none;
+    border-radius: 10px;
+    position: fixed;
+    cursor: pointer;
+}
+.item img {
+    height: 400px;
+    width: 500px;
+    border: 1px black solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(105, 105, 105);
+    z-index: auto;
+}
+div.tagCenter {
+    width: 500px;
+}
+div.pricetagD {
+    width: 300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
+    top: -5px;
+    border-radius: 0 0 10px 10px;
+}
+div.item {
+    width: 500px;
+}
+div.pricetagD p {
+    display: inline-block;
+    width: 240px;
+    font-size: 30px;
+    margin: 0 5px;
+    text-align-last: justify;
+}
+div.pricetagD button {
+    height: 50px;
+    width: 50px;
+    border-radius: 0 0 10px 0;
+    border: 0;
+    background-color: greenyellow;
+    display: inline;
+    font-size: 30px;
+    margin: 0;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 1380px) {
+    body {
+        zoom: 80%;
+        zoom: 0.8;
+        -moz-transform: scale(0.8, 0.8);
+    }
+    div.kosar {
+        display: none;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        z-index: 1;
+    }
+    div.item {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 0.3s;
+    }
+    div#display {
+        width: 100%;
+        padding: 0;
+        padding-top: 95px;
+
+    }
+    button.kosarBtn{
+        display: block;
+    }
+    p.price, div.kosar p:not(.price) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button.buy{
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    div.kosar p:not(.price) {
+        width: 400px;
+    }
+    div.pricetagD {
+        z-index: 0;
+    }
+}
