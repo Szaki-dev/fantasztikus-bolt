@@ -35,10 +35,6 @@ var items = {
     "Körte":{
         value:75,
         img:"./img/korte.jpg"
-    },
-    "Doromb":{
-        value:80085,
-        img:"https://c.tenor.com/kSyug6pEQlgAAAAd/outsize-label.gif"
     }
 }
 // Létrehozzuk a változókat
